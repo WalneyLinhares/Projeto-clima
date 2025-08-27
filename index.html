@@ -1,0 +1,86 @@
+'<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+    <link rel="icon" href="imagens/icons8-sun.svg">
+    <!-- estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <form id="search">
+                <i id="icon-location" class="fa-solid fa-location-dot" title="Usar minha localização atual"></i>
+                <input type="search" name="city_name" id="city_name" placeholder="Buscar cidade">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <button id="button-light">
+                <i id="icon-light" class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+
+        <section id="weather">
+            <h1 id="title">Fortaleza</h1>
+
+            <div id="infos">
+                <div id="temp">
+                    <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="icon da temperatura" id="img-temp">
+
+                    <div>
+                        <h2 id="temp_value">32<sup>C°</sup></h2>
+                        <h3 id="temp_description">Ensolarado</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="other-infos">
+                <div class="info">
+                    <i id="icon-temp-max" class="fa-solid fa-temperature-high"></i>
+
+                    <div>
+                        <h2>Temp. max</h2>
+                        <h3 id="temp-max">32</h3>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="icon-temp-min" class="fa-solid fa-temperature-low"></i>
+
+                    <div>
+                        <h2>Temp. min</h2>
+                        <h3 id="temp-min">32</h3>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="icon-temp-umi" class="fa-solid fa-droplet"></i>
+
+                    <div>
+                        <h2>Umidade</h2>
+                        <h3 id="temp-umi">50%</h3>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="icon-temp-wind" class="fa-solid fa-wind"></i>
+
+                    <div>
+                        <h2>Vento</h2>
+                        <h3 id="temp-wind">50 km/h</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
