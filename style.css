@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #00f7ff, #005180);
+    flex-direction: column;
 }
 
 .container {
@@ -190,4 +191,9 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
     -webkit-text-fill-color: var(--text-color) !important;
     transition: background-color 9999s ease-in-out 0s !important;
+}
+
+.text-demonstracao {
+    margin-top: .3rem;
+    font-size: .6rem;
 }
